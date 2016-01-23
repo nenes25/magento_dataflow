@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Hhennes_DataFlow>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Hhennes_DataFlow>
+    </modules>
+</config>
