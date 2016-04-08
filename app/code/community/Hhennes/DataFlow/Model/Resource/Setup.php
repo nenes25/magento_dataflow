@@ -50,9 +50,9 @@ class Hhennes_DataFlow_Model_Resource_Setup extends Mage_Core_Model_Resource_Set
             
             foreach ($this->_profiles as $profile) {
 
-                //Création du profil d'export
+                //Création du profil d'import
                 $profileExport = Mage::getModel('dataflow/profile');
-                $profileExport->setName($profile['name'].' Export');
+                $profileExport->setName($profile['name'].' Import');
 
                 $exportXml = '<action type="dataflow/convert_adapter_io" method="load">
                                 <var name="type">file</var>
@@ -80,9 +80,9 @@ class Hhennes_DataFlow_Model_Resource_Setup extends Mage_Core_Model_Resource_Set
                 }
                 
 
-                //Création du profil d'import
+                //Création du profil d'export
                 $profileImport = Mage::getModel('dataflow/profile');
-                $profileImport->setName($profile['name'] . ' Import');
+                $profileImport->setName($profile['name'] . ' Export');
 
                 $importXml = '<action type="hhennes_dataflow/convert_parser_{$model}" method="unparse">
                             </action>
