@@ -5,6 +5,7 @@ class Hhennes_DataFlow_Model_Convert_Parser_CmsPage extends Hhennes_DataFlow_Mod
     protected $_model = 'cms/page';
     protected $_createdAtField = 'creation_time';
     protected $_updatedAtField = 'update_time';
+	protected $_stores = true;
 
     /**
      * Import des données Blocks Cms
